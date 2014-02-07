@@ -5,7 +5,7 @@ private $head = "<!DOCTYPE html>
 <html>
 <head>
 <meta charset='UTF-8'>
-<link rel='stylesheet' type='text/css' href='http://dev.sumanpoudel.com/css/style.css'>
+<link rel='stylesheet' type='text/css' href='http://localhost/css/style.css'>
 <title> suman </title>
 </head>";
 

@@ -1,6 +1,10 @@
 <?php
 function downloadResume(){
-	$download = "<a href='http://dev.sumanpoudel.com/includes/CVcomp.docx' download='sumancv.docx'>click here</a> to download my cv";
+	$download = "<a href='http://dev.sumanpoudel.com/includes/CVcomp.docx' download='sumancv.docx'>
+	<input type='button' value='Download my Resume in MSword format' class='downloadbtn' /></a>
+<a href='http://dev.sumanpoudel.com/includes/CVcomp.pdf' download='sumancv.pdf'>
+	<input type='button' value='Download my Resume in PDF' class='downloadbtn' /></a>
+	";
 	echo $download;
 }
 
@@ -51,6 +55,8 @@ Grade = First
 <li><a href="http://designmycoat.co.uk/" target="_blank">www.designmycoat.co.uk</li>
 <li><a href="http://dev.sumanpoudel.com/" target="_blank">dev.sumanpoudel.com</li>
 </ul>
+<a href="https://github.com/suman315/My_CMS/" target="_blank"> <input type="button" value="Download Source codes from GitHub" class="downloadbtn" /> </a>
+
 	</article>';
 	echo $Resume;
 }

@@ -8,6 +8,8 @@ function getDesignedWebsite(){
 <li><a href="http://wealthandluxurymagazine.com/" target="_blank">www.wealthandluxurymagazine.com</li>
 <li><a href="http://designmycoat.co.uk/" target="_blank">www.designmycoat.co.uk</li>
 <li><a href="http://dev.sumanpoudel.com/" target="_blank">dev.sumanpoudel.com</li>
-</ul>';
+</ul>
+<a href="https://github.com/suman315/My_CMS/" target="_blank"> <input type="button" value="Download Source codes from GitHub" class="downloadbtn" /> </a>
+';
 echo $website;
 }
