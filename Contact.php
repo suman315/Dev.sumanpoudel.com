@@ -29,19 +29,23 @@ echo"<script type='text/javascript'>function gotohome(){
 gotohome();
 </script>";
 }else{
-	echo "unabel to send mail at the moment please try again".$form;
+	$errmessage = "<div class='errmessage'>unabel to send mail at the moment please try again </div>";
+	echo $errmessage.$form;
 }
 }
 else{
-	echo "please provide message".$form;
+	$errmessage = "<div class='errmessage'>please provide message </div>";
+	echo $errmessage.$form;
 }
 }
 else{
-	echo "please provide your email".$form;
+	$errmessage = "<div class='errmessage'>please provide your email </div>"; 
+	echo $errmessage.$form;
 }
 }
 else{
-	echo "please provide your name".$form;
+	$errmessage = "<div class='errmessage'>please provide your name </div>"; 
+	echo $errmessage.$form;
 }
 }else{
 	echo $form;

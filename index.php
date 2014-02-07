@@ -1,45 +1,60 @@
+<?php error_reporting(E_ALL ^ E_NOTICE); ?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<link rel='stylesheet' type='text/css' href='http://dev.sumanpoudel.com/css/style.css?ts=<?php echo time(); ?> ' >
+<title> <?php if(isset($url)){ echo $url;}else{echo "Suman Poudel";} ?> </title>
+</head>
 
-<?php include_once("Header.php");
-$header = new Header;
-$top = $header->getHeader();
-echo $top; ?>
 <?php include("Layout.php");
 $Layout = new Layout;
 $layout = $Layout->getLayout();
 echo $layout;
 ?>
 <section class="content">
-<?php if(empty($_GET['page'])){
- include_once("Home.php"); 
- getHomeContent(); 
+<?php 
+if(preg_match('/^[A-Za-z]+$/', $_GET['url'])){
+$url = $_GET['url'];
+
+switch ($url) {
+	case 'Aboutme':
+					include_once("Aboutme.php");
+					getAboutme();
+					break;
+	case 'Education':
+					include_once("Education.php");
+					getEducation();
+					break;
+	case 'Resume':
+					include_once("Resume.php");
+					downloadResume();
+					getResume();
+					break;
+	case 'Contact':
+					include_once("Contact.php");
+					displayForm();
+					break;
+	case 'Designed_Websites':
+					include_once("DesignedWebsite.php");
+					getDesignedWebsite();
+					break;
+
+	default:
+					include_once("Home.php"); 
+					getHomeContent(); 
+					break;
 }
-elseif($_GET['page']==1){
-	include_once("Aboutme.php");
-	getAboutme();
-}
-elseif ($_GET['page']==2) {
-	include_once("Education.php");
-	getEducation();
-}
-elseif ($_GET['page']==3){
-	include_once("Resume.php");
-	downloadResume();
-	getResume();
-}
-elseif ($_GET['page']==4) {
-	include_once("Contact.php");
-	displayForm();
+
 
 }
-elseif ($_GET['page']==5) {
-	include_once("DesignedWebsite.php");
-	getDesignedWebsite();
+else{
+	include_once("Home.php"); 
+	getHomeContent(); 
 }
- else{
-	 include_once("Home.php"); 
- getHomeContent(); 
-}
+ 
  ?>
+
 </section>
 <?php echo $Layout->getFooter()  ?>
 </body>
