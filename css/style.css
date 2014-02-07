@@ -1,0 +1,186 @@
+.earth{
+display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.earth img{
+  width: auto;
+  height: auto;
+  position: absolute;
+  margin-left: 20%;
+  overflow: hidden;
+  z-index: -99999;
+  margin-bottom: 0px;
+
+
+animation:earth 120s 999;
+-webkit-animation:earth 120s infinite;
+}
+@keyframes earth{
+from{ transform: rotateZ(0deg);}
+  to{ transform: rotateZ(360deg);}
+}
+@-webkit-keyframes earth {
+  from{ -webkit-transform: rotate(0deg);}
+  to{ -webkit-transform: rotate(360deg);}
+}
+
+.body a{
+text-decoration: none;
+color: inherit;
+}
+.logo{
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
+}
+/* for main menu */
+.mainNav {
+  width:80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #5882FA;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px #5882FA;
+  
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.mainNav ul{
+  margin: 0px;
+  padding: 10px; 
+  border-radius: 25px;
+  background-color: rgba(110, 110, 110, 0.8);
+   overflow: hidden;
+   font-family: Georgia, serif;
+   font-weight: 900;
+}
+.mainNav ul li {
+  display: inline;
+}
+.mainNav ul li a{
+padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.mainNav ul li:hover, a:hover{
+  border-radius: 25px;
+  color: #FA5858; 
+  animation:navbackground 2s;
+-webkit-animation:navbackground 2s; /* Safari and Chrome */
+}
+@keyframes navbackground
+{
+from {background:#6E6E6E;}
+to {background:#000;}
+}
+
+@-webkit-keyframes navbackground /* Safari and Chrome */
+{
+from {background:#6E6E6E;}
+to {background:#000;}
+}
+
+/* end of main menu */
+.content{
+  position: relative;
+  width:80%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  color: #2E2E2E;
+  background-color: rgba(213, 211, 211, 0.9);
+}
+.article1{
+  position: relative;
+  width: 50%;
+  font-family: Georgia, serif;
+  text-align: center;
+  float: left;
+  padding-bottom: 10px;
+}
+.article1 h1{
+  font-size: 40px;
+}
+.profilepic img{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer{
+  width: 80%;
+  margin: auto;
+  clear: both;
+  background-color: rgba(213, 211, 211, 0.7);;
+}
+/* for ipads and other tablets */
+@media only screen and (max-width: 1024px){
+  .music img{
+  width: auto;
+  height: auto;
+  position: absolute;
+  margin-left: 10%;
+  overflow: hidden;
+  z-index: -99999;
+  margin-bottom: 0px;
+  animation:music 120s 999;
+-webkit-animation:music 120s infinite;
+}
+.logo{
+  width: 100%;
+}
+.mainNav{
+  width: 100%;
+}
+.mainNav ul li a{
+padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+.content{
+  width: 100%;
+}
+}
+/* about me page */
+.myimage{
+  width:50%;
+  height: 50%;
+}
+.discription{
+  padding: 20px;
+}
+/* education page */
+.resume, .education{
+  padding: 20px;
+}
+.form{
+padding: 5% 20% 5% 20%;
+}
+.form span{
+  color: #AAA;
+  font-weight: normal;
+  font-size: 20px;
+}
+.form .text{
+  width: 40%;
+}
+.submit{
+  width: 30%;
+  height: 30px;
+  background-color: #848484;
+  color: #FA5858;
+  margin-left: 10%;
+  font-weight: 900;
+  font-size: 20px;
+   box-shadow: 5px 5px 5px #5882FA;
+}
+.submit:hover{
+  background-color: #fff;
+  border-radius: 25px;
+}
