@@ -8,7 +8,7 @@ class Layout{
 </header>
 <nav class="mainNav">
 <input type="button" value="MENU" class="mobilebtn" />
-<ul>
+<ul class="menu">
 <li><a href="/">Home</a></li>
 <li><a href="Aboutme">About me</a></li>
 <li><a href="Education">Education</a></li>

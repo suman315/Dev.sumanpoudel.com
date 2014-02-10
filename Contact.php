@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL ^ E_NOTICE);
 function displayForm(){
-$form = "<form action='http://dev.sumanpoudel.com/?page=4' method='post' class='form'>
+$form = "<form action='http://dev.sumanpoudel.com/Contact' method='post' class='form'>
 <h2><b>Name <span>(required)</span></b></h2><input type='text' name='name' placeholder='Name' class='text' autofocus><br>
 		<h2><b>Email <span>(required)</span></b></h2><input type='email' name='email' placeholder='Email' class='text'><br>
 		<h2><b>Message <span>(required)</span></b></h2><textarea name='message' rows='6' cols='50' maxlength='500' placeholder='please put your message here'>

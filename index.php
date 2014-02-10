@@ -3,6 +3,7 @@
 <html>
 <head>
 <meta charset='UTF-8'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <link rel='stylesheet' type='text/css' href='http://dev.sumanpoudel.com/css/style.css?ts=<?php echo time(); ?> ' >
 <title> <?php if(isset($url)){ echo $url;}else{echo "Suman Poudel";} ?> </title>
 </head>
@@ -14,7 +15,7 @@ echo $layout;
 ?>
 <section class="content">
 <?php 
-if(preg_match('/^[A-Za-z]+$/', $_GET['url'])){
+if(preg_match('/^[A-Za-z-_]+$/', $_GET['url'])){
 $url = $_GET['url'];
 
 switch ($url) {
@@ -57,5 +58,7 @@ else{
 
 </section>
 <?php echo $Layout->getFooter()  ?>
+<script type="text/javascript" src="http://dev.sumanpoudel.com/css/javaScript.js"></script>
 </body>
+
 </html>

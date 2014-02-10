@@ -1,5 +1,10 @@
+$darkGrey:rgba(116, 115, 124, 1);
+$rotate0:rotate(0deg);
+$rotate360:rotate(360deg);
+
+
 .body{
-  background-color: rgba(116, 115, 124, 1);
+  background-color: $darkGrey;
 }
 .earth img{
   width: 225px;
@@ -9,18 +14,16 @@
   margin-left: 40%;
   overflow: hidden;
   z-index: -99999;
-
-
 animation:earth 120s 999;
--webkit-animation:earth 120s infinite;
+-webkit-animation:earth 120s 999;
 }
 @keyframes earth{
-from{ transform: rotate(0deg);}
-  to{ transform: rotate(360deg);}
+from{ transform: $rotate0 ;}
+  to{ transform: $rotate360;}
 }
 @-webkit-keyframes earth {
-  from{ -webkit-transform: rotate(0deg); }
-  to{ -webkit-transform: rotate(360deg); }
+  from{ -webkit-transform: $rotate0; }
+  to{ -webkit-transform: $rotate360; }
 }
 
 .body a{
@@ -49,8 +52,7 @@ color: inherit;
   
   margin-bottom: 10px;
   text-transform: uppercase;
-}
-.mainNav ul{
+ ul{
   margin: 0px;
   padding: 10px; 
   border-radius: 25px;
@@ -58,15 +60,13 @@ color: inherit;
    overflow: hidden;
    font-family: Georgia, serif;
    font-weight: 900;
-}
-.mainNav ul li {
+ li {
   display: inline;
-}
-.mainNav ul li a{
+ a{
 padding: 10px;
-  padding-right: 25px;
-  padding-left: 25px;
-}
+  padding-right: 30px;
+  padding-left: 30px;
+}}}}
 .mainNav ul li:hover, .mainNav ul li a:hover {
   border-radius: 25px;
   color: #FA5858; 
@@ -102,10 +102,9 @@ to {background:#000;}
   text-align: center;
   float: left;
   padding-bottom: 10px;
-}
-.article1 h1{
+ h1{
   font-size: 40px;
-}
+}}
 .profilepic img{
   display: block;
   margin-right: auto;
@@ -215,11 +214,8 @@ padding: 5px;
 }
 }
 /* Devices between ipad and smart phones && small tablets */
-@media handheld, only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 .logo{
-  width: 100%;
-}
-.content{
   width: 100%;
 }
 .mainNav{
@@ -233,6 +229,7 @@ padding: 5px;
   padding-left: 20px;
 }
 
+/*
 .mobilebtn{
   width: 100%;
   height: 100%;
@@ -243,37 +240,15 @@ padding: 5px;
   border-radius: 25px;
   font-size: 20px;
 }
-.mainNav .menu li {
-  width: 100%;
-  display: block;
-  text-align: center;
-}
-.mainNav .menu{
-  width: 100%;
-  z-index: 99999;
-  position: absolute;
-}
-}
- @media handheld, screen and (max-width: 500px){
-  .mobilebtn{
+*/
+.mainNav ul>li {
   width: 100%;
   height: 100%;
-  padding-left: 20%;
-  padding-right: 20%;
   display: block;
-  background-color: #fff;
-  border-radius: 25px;
-  font-size: 20px;
-}
-.mainNav .menu li {
-  width: 100%;
-  display: block;
-  text-align: center;
-}
-.mainNav .menu{
-  width: 100%;
-  z-index: 99999;
-  position: absolute;
+  -webkit-transform: scale(0.1);
+  transform:scale(0.1);
+  -ms-transform:scale(0.1);
 }
 
- }
+
+}
