@@ -1,9 +1,9 @@
 <?php
 function downloadResume(){
 	$download = "<a href='http://dev.sumanpoudel.com/includes/CVcomp.docx' download='sumancv.docx'>
-	<input type='button' value='Download my Resume in MS Word format' class='downloadbtn' /></a>
+	<input type='button' value='Download Resume in .docx format' class='downloadbtn' /></a>
 <a href='http://dev.sumanpoudel.com/includes/CVcomp.pdf' download='sumancv.pdf'>
-	<input type='button' value='Download my Resume in PDF' class='downloadbtn' /></a>
+	<input type='button' value='Download Resume in PDF' class='downloadbtn' /></a>
 	";
 	echo $download;
 }

@@ -2,21 +2,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset='UTF-8'>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<link rel='stylesheet' type='text/css' href='http://dev.sumanpoudel.com/css/style.css?ts=<?php echo time(); ?> ' >
-<title> <?php if(isset($url)){ echo $url;}else{echo "Suman Poudel";} ?> </title>
+	<link rel="icon" type="image/png" href="http://dev.sumanpoudel.com/img/favicon.ico">
+	<meta charset='UTF-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel='stylesheet' type='text/css' href='http://dev.sumanpoudel.com/css/style.css?ts=<?php echo time(); ?> ' >
+	<title> <?php if(isset($url)){ echo $url;}else{echo "Suman Poudel";} ?> </title>
 </head>
 
 <?php include("Layout.php");
-$Layout = new Layout;
-$layout = $Layout->getLayout();
-echo $layout;
+	$Layout = new Layout;
+	$layout = $Layout->getLayout();
+	echo $layout;
 ?>
 <section class="content">
 <?php 
 if(preg_match('/^[A-Za-z-_]+$/', $_GET['url'])){
-$url = $_GET['url'];
+       $url = $_GET['url'];
 
 switch ($url) {
 	case 'Aboutme':
