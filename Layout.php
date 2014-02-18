@@ -2,6 +2,7 @@
 
 class Layout{
 	private $layout = '<body class="body">
+	<img src="http://dev.sumanpoudel.com/img/loading.png"  class="loading" />
 <div class="earth"><img src="http://dev.sumanpoudel.com/img/e.png" alt="earth"></div>
 <header>
    <img src="http://dev.sumanpoudel.com/img/my-image.jpg" alt="no image" class="logo">

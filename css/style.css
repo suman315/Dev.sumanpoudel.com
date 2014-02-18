@@ -1,6 +1,27 @@
 .body{
   background-color: rgba(116, 115, 124, 1);
 }
+.loading{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 130px;
+  width: 130px;
+  overflow: hidden;
+  animation: loading 1s linear 3;
+  -webkit-animation: loading 1s linear 3;
+}
+@-webkit-keyframes loading {
+  from { -webkit-transform:rotate(0deg); }
+
+  to { -webkit-transform:rotate(360deg); }
+}
+
+@keyframes loading {
+  from { transform:rotate(0deg); }
+  to { transform:rotate(360deg);}
+}
+
 .earth img{
   width: 225px;
   height: 225px;
@@ -181,6 +202,7 @@ padding: 1% 20% 5% 20%;
 
 /* for samll laptops */
 @media only screen and (min-width:1025px) and (max-width:1222px) {
+
 .logo{
   width: 90%;
 }
@@ -202,6 +224,9 @@ footer{
 }
 /* iPads (landscape) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape) {
+.loading {
+  display: none;
+}
   .earth img{
   margin-left: 40%;
 }
@@ -226,6 +251,9 @@ footer{
 }
 /* iPads (portrait) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : portrait) {
+.loading{
+  display: none;
+}
   .earth img{
   margin-left: 40%;
 }
@@ -255,6 +283,9 @@ footer{
 
 /* Devices between ipad and smart phones && small tablets */
 @media handheld, only screen and (min-width: 480px) and (max-width: 767px) {
+.loading{
+  display: none;
+}
 .logo{
   width: 100%;
 }
@@ -294,6 +325,9 @@ padding: 5px;
 }
 }
  @media handheld, screen and (max-width: 500px){
+.loading{
+  display: none;
+}
   .logo{
   width: 100%;
 }
@@ -322,7 +356,7 @@ padding: 5px;
   text-align: center;
 }
 .mainNav .menu{
-  width: 95%;
+  width: 90%;
   z-index: 99999;
   position: absolute;
   background-color: rgba(110, 110, 110, 1);

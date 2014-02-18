@@ -9,7 +9,6 @@
 	<link rel='stylesheet' type='text/css' href='http://dev.sumanpoudel.com/css/style.css?ts=<?php echo time(); ?> ' >
 	<title> <?php if(isset($url)){ echo $url;}else{echo "Suman Poudel";} ?> </title>
 </head>
-
 <?php include("Layout.php");
 	$Layout = new Layout;
 	$layout = $Layout->getLayout();
