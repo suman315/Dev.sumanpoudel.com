@@ -1,24 +1,3 @@
-
-
-if($(document).ready()){
-	$(function() {
-    $(".loading").fadeOut();
-});
-
-}
-
-if ($(window).width() < 767) {
-		$('.menu').hide();
-		$('.mobilebtn').click(function(){
-			$('.menu').toggle();
-		});
-		$(".loading").fadeOut();
-	}
-else{
-	$('.menu').show();
-}
-
-/* for google maps */
 $(document).ready(function () {
 var myCenter=new google.maps.LatLng(51.2933854,-0.7601123999999999);
 

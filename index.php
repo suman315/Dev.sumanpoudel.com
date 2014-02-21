@@ -6,6 +6,7 @@
 	<meta charset='UTF-8'>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
 	<link rel='stylesheet' type='text/css' href='http://dev.sumanpoudel.com/css/style.css?ts=<?php echo time(); ?> ' >
 	<title> <?php if(isset($url)){ echo $url;}else{echo "Suman Poudel";} ?> </title>
 </head>
@@ -60,6 +61,7 @@ else{
 </section>
 <?php echo $Layout->getFooter()  ?>
 <script type="text/javascript" src="http://dev.sumanpoudel.com/css/javaScript.js"></script>
+<script type="text/javascript" src="http://dev.sumanpoudel.com/css/googlemap.js"></script>
 </body>
 
 </html>

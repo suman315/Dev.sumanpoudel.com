@@ -10,6 +10,7 @@ function getHomeContent(){
 </article>
 <aside class="profilepic">
 <img src="http://dev.sumanpoudel.com/img/pic.jpg" alt="no image" />
- </aside>';
+ </aside>
+ <div id="googleMap"> </div>';
  echo $content;
 }
